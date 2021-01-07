@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Prescription</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style3.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+</head>
+
+<body>
+    <h1>MWorld</h1>
+
+    <div class="container">
+
+        <!-- <p>Doctor Information</p> -->
+        <div class="doc">
+            <div id="doctorN">
+                <span class="title">Doctor Name</span> <br>
+                <input type="text" name="doctorName" id="doctorName">
+            </div>
+
+            <div id="doctorQ">
+                <span class="title">Qualification</span> <br>
+                <textarea id="qualification" cols="20" rows="8"> </textarea>
+            </div>
+        </div>
+
+
+
+        <!-- <p>Patient Information</p> -->
+        <div class="patient">
+            <div id="patientN">
+                <span class="title">Patient Name</span> <br>
+                <input type="text" id="patientName">
+            </div>
+
+            <div id="patientA">
+                <span class="title">Patient Age</span> <br>
+                <input type="text" id="patientAge">
+            </div>
+
+            <div id="genderDiv">
+                <span class="title">Gender</span> <br>
+                <form>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </form>
+            </div>
+        </div>
+
+        <!-- <p>Medicines to take</p> -->
+        <div class="suggestion">
+            <div id="med">
+                <span class="title">Medicines</span> <br>
+                </label><textarea id="medicines" cols="30" rows="8"></textarea>
+            </div>
+
+            <!-- <p>Diagnosis</p> -->
+            <div id="diag">
+                <span class="title">Diagnosis</span> <br>
+                <textarea id="diagnosis" cols="30" rows="8"></textarea>
+            </div>
+        </div>
+
+
+
+        <div class="suggestion">
+            <div id="complaintsDiv">
+                <span class="title">Chief Complaints</span>
+                <textarea name="" id="complaints" cols="30" rows="8"></textarea>
+
+            </div>
+
+            <div id="onExaminationDiv">
+                <span class="title">On Examination</span>
+                <textarea name="" id="onExamin" cols="30" rows="8"></textarea>
+
+            </div>
+
+            <div id="advicesDiv">
+                <span class="title">Advices</span>
+                <textarea name="" id="advices" cols="30" rows="8"></textarea>
+
+            </div>
+        </div>
+
+        <br>
+
+        <button id="save">save</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <script src="javascript_modified.js"></script>
+</body>
+
+</html>
