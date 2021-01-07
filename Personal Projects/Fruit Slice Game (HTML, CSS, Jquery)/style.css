@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ccc);
+}
+
+#container {
+    height: 600px;
+    width: 750px;
+    background-color: #9DD2EA;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 0px #009DE4;
+    position: relative;
+}
+
+#score {
+    background-color: #F1FF92;
+    color: #AA955F;
+    padding: 10px;
+    position: absolute;
+    left: 622.5px;
+    box-shadow: 0px 2px 0px;
+    font-size: 17px;
+}
+
+#correct {
+    position: absolute;
+    left: 250px;
+    background-color: #42e252;
+    color: white;
+    padding: 12px;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left: 250px;
+    background-color: #ec313b;
+    color: white;
+    padding: 12px;
+    display: none;
+}
+
+#fruitContainer {
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    box-shadow: 0px 4px 0px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.fruit {
+    display: none;
+    position: absolute;
+}
+
+#instruction {
+    width: 400px;
+    height: 50px;
+    background-color: #B481D9;
+    margin: auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 3px 0px #8153A8;
+}
+
+#options {
+    width: 400px;
+    height: 100px;
+    margin: 12px auto;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 0px #7EA8BB;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    line-height: 85px;
+    position: relative;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.box:hover, #start:hover {
+    background-color: #745492;
+    color: white;
+    box-shadow: 0px 3px #a544e2;
+}
+
+.box:active, #start:active {
+    box-shadow: none;
+    top: 4px;
+}
+
+#box4 {
+    margin-right: 0px;
+}
+
+#start {
+    width: 100px;
+    margin: 10px auto;
+    background-color: #CEE9F5;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 0px #7EA8BB;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+#trialsLeft {
+    width: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+    background-color: #F1FF92;
+    left: 50px;
+    box-shadow: 0px 3px 0px #7EA8BB;
+    -moz-box-shadow: 0px 3px 0px #7EA8BB;
+    -webkit-box-shadow: 0px 3px 0px #7EA8BB;
+    -o-box-shadow: 0px 3px 0px #7EA8BB;
+    border-radius: 4px;
+    /* visibility: hidden; */
+    display: none;
+}
+
+#gameover {
+    height: 250px;
+    width: 450px;
+    background: linear-gradient(#F3CA6B, #F3716C);
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    border-radius: 10px;
+    z-index: 2;
+    display: none;
+}
+
+.life {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}

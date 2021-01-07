@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stopwatch</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- title -->
+    <div class="container-fluid">
+        <div id="header">
+            Stopwatch
+        </div>
+    </div>
+
+    <!-- lap time -->
+
+    <div class="container-fluid">
+        <div id="lap">
+            <span id="lapmin">00</span>:<span id="lapsec">00</span>:<span id="lapcentisec">00</span>
+        </div>
+    </div>
+
+    <!-- timer -->
+    <div class="container-fluid">
+        <div id="time">
+            <span id="timemin">00</span>:<span id="timesec">00</span>:<span id="timecentisec">00</span>
+        </div>
+    </div>
+
+    <!-- controls -->
+
+    <div id="conltrolsContainer" class="row">
+        <div class="col-xs-2 col-xs-offset-4">
+            <div id="startButton" class="control">
+                Start
+            </div>
+
+            <div id="stopButton" class="control">
+                Stop
+            </div>
+
+            <div id="resumeButton" class="control">
+                Resume
+            </div>
+        </div>
+
+        <div class="col-xs-2 ">
+            <div id="lapButton" class="control">
+                Lap
+            </div>
+
+            <div id="resetButton" class="control">
+                Reset
+            </div>
+        </div>
+    </div>
+
+    <!-- laps history -->
+
+    <div class="container-fluid">
+        <div id="lapsHistory">
+            <!-- Lap 1 <span class="right"><span>00:<span>00:<span>00</span></span></span></span>
+            <hr>
+            Lap 1 <span class="right"><span>00:<span>00:<span>00</span></span></span></span>
+            <hr>
+            Lap 1 <span class="right"><span>00:<span>00:<span>00</span></span></span></span>
+            <hr>
+            Lap 1 <span class="right"><span>00:<span>00:<span>00</span></span></span></span>
+            <hr>
+            Lap 1 <span class="right"><span>00:<span>00:<span>00</span></span></span></span>
+            <hr>
+            Lap 1 <span class="right"><span>00:<span>00:<span>00</span></span></span></span>
+            <hr> -->
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="stopwatch.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
